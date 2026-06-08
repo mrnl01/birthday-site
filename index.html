@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FRONT PAGE -->
+  <h1 id="title" style="font-family: 'Playwrite GB J', cursive; margin-top: 20px; text-align: center;">
+    <i>Open</i>
+  </h1>
+  <div class="envelope" onclick="openEnvelope()" id="envelope">💌</div>
+
+  <!-- LETTER -->
+  <div id="letter" class="hidden">
+    <h1 class="title">🎀 Chapter: You Were Born 🎀</h1>
+    <p class="message">
+      Somewhere between all the chaos, laughter, and late-night talks, today quietly turns into your day.<br>
+      A day where the universe pauses just long enough to celebrate you<br> — your energy, your kindness, your wonderfully unfiltered existence.
+      <br>
+      So welcome to your birthday space.<br>
+      Consider this your soft little corner of joy, where memories gather, music hums in the background, <br>and everything says: you matter, loudly and beautifully ✨
+
+    </p>
+
+    <!-- BUTTON LIVES INSIDE LETTER -->
+    <button id="cameraBtn" class="hidden">📸 See our memories</button>
+  </div>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- COLLAGE -->
+  <div id="collage" class="hidden">
+    <div class="collage-tile"><img src="images/image1.png" alt="Memory 1"></div>
+    <div class="collage-tile"><img src="images/image5.png" alt="Memory 2"></div>
+    <div class="collage-tile"><img src="images/image3.png" alt="Memory 3"></div>
+    <div class="collage-tile"><img src="images/image4.png" alt="Memory 4"></div>
+  </div>
+
+  <!-- FINAL BIG PHOTO -->
+  <img id="finalPhoto" src="images/big.png" alt="Us">
+
+  <!-- FINALE SCREEN -->
+  <div id="finale">
+    <div id="candles">
+      <span class="candle-flame">🔥</span>
+      <span class="candle-flame">🔥</span>
+      <span class="candle-flame">🔥</span>
+    </div>
+    <div id="cake">🎂</div>
+    <div id="lastMessage">
+      <h2>Happy Birthday, shining star ✨</h2>
+      <p>
+        And just like that, this little digital universe reaches its last page… <br>but your story doesn’t stop here.
+
+        May this year bring you moments that feel like warm sunlight on ordinary days, <br>laughter that shows up uninvited, and dreams that stop being “someday” and start becoming “right now.”
+        <br>
+        Keep collecting memories like fireflies in a jar — messy, glowing, real.<br>
+        And no matter where life drifts next, may you always find your way back to joy.<br>
+
+         🎂💫
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
